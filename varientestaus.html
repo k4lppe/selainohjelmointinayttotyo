@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Värien testaus - Kotkantien maalaus ja tapetointi</title>
+    <link rel="stylesheet" type="text/css" href="varientestaus.css">
+    <script src="varientestaus.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <li class="navbuttons">
+            <a href="Etusivu">Etusivu</a>
+            <a href="palvelut.html">Palvelut</a>
+            <a href="varientestaus.html">Värien testaus</a>
+            <a href="Galleria">Galleria</a>
+            <a href="Yhteystiedot">Yhteystiedot</a>
+        </li>
+    </div>
+
+    <h1 class="title">Värien testaus</h1>
+    <h2 class="colorName">Väri</h2>
+
+    <input type="radio" id="colorDiv1" name="colordiv" value="1" onclick="saveChoice(this)">
+    <label for="colorDiv1">Valitse pinta 1</label>
+    <input type="radio" id="colorDiv2" name="colordiv" value="2" onclick="saveChoice(this)">
+    <label for="colorDiv2">Valitse pinta 2</label>
+
+    <div class="container">
+        <div class="color1">
+            <p></p>
+        </div>
+        <div class="color2">
+            <p></p>
+        </div>
+    </div>
+
+    <button class="resetButton" type="button">Palauta</button>
+    
+    <button class="colorButton" id="fiesta" type="button"></button>
+    <button class="colorButton" id="jester_red" type="button"></button>
+    <button class="colorButton" id="turmeric" type="button"></button>
+    <button class="colorButton" id="living_colar" type="button"></button>
+    <button class="colorButton" id="pink_peacock" type="button"></button>
+    <button class="colorButton" id="pepper_stem" type="button"></button>
+    <button class="colorButton" id="aspen_gold" type="button"></button>
+    <button class="colorButton" id="princess_blue" type="button"></button>
+
+    <button class="colorButton" id="toffee" type="button"></button>
+    <button class="colorButton" id="mango_mojito" type="button"></button>
+    <button class="colorButton" id="terrarium_moss" type="button"></button>
+    <button class="colorButton" id="sweet_lilac" type="button"></button>
+    <button class="colorButton" id="soybean" type="button"></button>
+    <button class="colorButton" id="eclipse" type="button"></button>
+    <button class="colorButton" id="sweet_corn" type="button"></button>
+    <button class="colorButton" id="brown_granite" type="button"></button>
+</body>
+</html>

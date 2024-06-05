@@ -1,0 +1,259 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    position: fixed;
+    z-index: 999;
+    background-color: #2b2e2c;
+    padding: 1%;
+    width: 100%;
+    top: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: 500;
+    padding: 2%;
+}
+.navbuttons{
+    list-style-type: none;
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    #profile-icon {
+        display: none;
+    }
+}
+.container{
+    display: flex;
+}
+.color1{
+    background-color: #DD4132;
+    position: absolute;
+    top: 300px;
+    left: 160px;
+    width: 800px;
+    height: 500px;
+}
+.color2{
+    background-color: #755139;
+    position: absolute;
+    top: 300px;
+    left: 960px;
+    width: 800px;
+    height: 500px;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 120px;
+}
+.colorName{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+input[type="radio"]#colorDiv1,
+input[type="radio"]#colorDiv2 {
+    display: none;
+}
+
+        /* Style the label as a custom radio button for colorDiv1 */
+        label[for="colorDiv1"] {
+            display: inline-block;
+            position: absolute;
+            padding-left: 35px;
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            user-select: none;
+            top: 250px;
+            left: 480px;
+        }
+
+        /* Custom radio button appearance for colorDiv1 */
+        label[for="colorDiv1"]::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        /* Custom appearance when colorDiv1 is checked */
+        input[type="radio"]#colorDiv1:checked + label[for="colorDiv1"]::before {
+            background-color: red;
+        }
+
+        /* Inner dot for the checked state for colorDiv1 */
+        input[type="radio"]#colorDiv1:checked + label[for="colorDiv1"]::after {
+            content: "";
+            position: absolute;
+            left: 9px;
+            top: 9px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        /* Repeat for another radio button (colorDiv2) */
+        label[for="colorDiv2"] {
+            display: inline-block;
+            position: absolute;
+            padding-left: 35px;
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            user-select: none;
+            top: 250px;
+            left: 1300px;
+        }
+
+        label[for="colorDiv2"]::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        input[type="radio"]#colorDiv2:checked + label[for="colorDiv2"]::before {
+            background-color: red;
+        }
+
+        input[type="radio"]#colorDiv2:checked + label[for="colorDiv2"]::after {
+            content: "";
+            position: absolute;
+            left: 9px;
+            top: 9px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: white;
+        }
+
+
+.resetButton{
+    position: absolute;
+    top: 880px;
+    left: 320px;
+    width: 150px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: #949494;
+    text-shadow: 2px 2px 2px #d1d1d1;
+}
+.colorButton{
+    width: 90px;
+    height: 50px;
+    border: none;
+}
+#fiesta{
+    background-color: #DD4132;
+    position: absolute;
+    top: 860px;
+    left: 560px;
+}
+#jester_red{
+    background-color: #9E1030;
+    position: absolute;
+    top: 860px;
+    left: 660px;
+}
+#turmeric{
+    background-color: #FE840E;
+    position: absolute;
+    top: 860px;
+    left: 760px;
+}
+#living_colar{
+    background-color: #FF6F61;
+    position: absolute;
+    top: 860px;
+    left: 860px;
+}
+#pink_peacock{
+    background-color: #C62168;
+    position: absolute;
+    top: 860px;
+    left: 960px;
+}
+#pepper_stem{
+    background-color: #8D9440;
+    position: absolute;
+    top: 860px;
+    left: 1060px;
+}
+#aspen_gold{
+    background-color: #FFD662;
+    position: absolute;
+    top: 860px;
+    left: 1160px;
+}
+#princess_blue{
+    background-color: #00539C;
+    position: absolute;
+    top: 860px;
+    left: 1260px;
+}
+#toffee{
+    background-color:  #755139;
+    position: absolute;
+    top: 920px;
+    left: 560px;
+}
+#mango_mojito{
+    background-color: #D69C2F;
+    position: absolute;
+    top: 920px;
+    left: 660px;
+}
+#terrarium_moss{
+    background-color: #616247;
+    position: absolute;
+    top: 920px;
+    left: 760px;
+}
+#sweet_lilac{
+    background-color: #E8B5CE;
+    position: absolute;
+    top: 920px;
+    left: 860px;
+}
+#soybean{
+    background-color: #D2C29D;
+    position: absolute;
+    top: 920px;
+    left: 960px;
+}
+#eclipse{
+    background-color: #343148;
+    position: absolute;
+    top: 920px;
+    left: 1060px;
+}
+#sweet_corn{
+    background-color: #F0EAD6;
+    position: absolute;
+    top: 920px;
+    left: 1160px;
+}
+#brown_granite{
+    background-color:#615550;
+    position: absolute;
+    top: 920px;
+    left: 1260px;
+}
