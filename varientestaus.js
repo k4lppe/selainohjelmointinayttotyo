@@ -89,6 +89,9 @@ $(document).ready(function(){
                 $(".colorName").text("Brown Granite, #615550");
                 $(".colorName").show();
         });
-    
+        $(".resetButton").click(function(){
+            $(".color1").css("background-color", "white");
+            $(".color2").css("background-color", "white");
+        });
     
 });
