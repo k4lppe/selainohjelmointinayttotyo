@@ -4,17 +4,17 @@
     display: flex;
 }
 .color1{
-    background-color: #DD4132;
+    
     position: absolute;
-    top: 2500px;
+    top: 250px;
     left: 160px;
     width: 800px;
     height: 500px;
 }
 .color2{
-    background-color: #755139;
+    
     position: absolute;
-    top: 2500px;
+    top: 250px;
     left: 960px;
     width: 800px;
     height: 500px;
@@ -24,13 +24,13 @@
     font-size: 40px;
     margin-top: 120px;
     position: absolute;
-    top: 2200px;
+    top: -30px;
     left: 820px;
 }
 .colorName{
     text-align: center;
     font-size: 30px;
-    top: 2400px;
+    top: 140px;
     left: 820px;
     z-index: 999;
     position: absolute;
@@ -50,7 +50,7 @@ input[type="radio"]#colorDiv2 {
             cursor: pointer;
             font-size: 18px;
             user-select: none;
-            top: 2460px;
+            top: 200px;
             left: 480px;
         }
 
@@ -93,7 +93,7 @@ input[type="radio"]#colorDiv2 {
             cursor: pointer;
             font-size: 18px;
             user-select: none;
-            top: 2460px;
+            top: 200px;
             left: 1300px;
         }
 
@@ -127,7 +127,7 @@ input[type="radio"]#colorDiv2 {
 
 .resetButton{
     position: absolute;
-    top: 3030px;
+    top: 790px;
     left: 320px;
     width: 150px;
     height: 80px;
@@ -146,96 +146,101 @@ input[type="radio"]#colorDiv2 {
 #fiesta{
     background-color: #DD4132;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 560px;
 }
 #jester_red{
     background-color: #9E1030;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 660px;
 }
 #turmeric{
     background-color: #FE840E;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 760px;
 }
 #living_colar{
     background-color: #FF6F61;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 860px;
 }
 #pink_peacock{
     background-color: #C62168;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 960px;
 }
 #pepper_stem{
     background-color: #8D9440;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 1060px;
 }
 #aspen_gold{
     background-color: #FFD662;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 1160px;
 }
 #princess_blue{
     background-color: #00539C;
     position: absolute;
-    top: 3030px;
+    top: 760px;
     left: 1260px;
 }
 #toffee{
     background-color:  #755139;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 560px;
 }
 #mango_mojito{
     background-color: #D69C2F;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 660px;
 }
 #terrarium_moss{
     background-color: #616247;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 760px;
 }
 #sweet_lilac{
     background-color: #E8B5CE;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 860px;
 }
 #soybean{
     background-color: #D2C29D;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 960px;
 }
 #eclipse{
     background-color: #343148;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 1060px;
 }
 #sweet_corn{
     background-color: #F0EAD6;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 1160px;
 }
 #brown_granite{
     background-color:#615550;
     position: absolute;
-    top: 3090px;
+    top: 820px;
     left: 1260px;
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    #profile-icon {
+        display: none;
+    }
 }

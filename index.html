@@ -6,19 +6,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Etusivu - Kotkantien maalaus ja tapetointi</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="varientestaus.css">
 
-    <script src="varientestaus.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <div class="navbar">
         <li class="navbuttons">
-            <a href="Etusivu">Etusivu</a>
+            <a href="index.html">Etusivu</a>
             <a href="palvelut.html">Palvelut</a>
             <a href="varientestaus.html">Värien testaus</a>
-            <a href="Galleria">Galleria</a>
-            <a href="Yhteystiedot">Yhteystiedot</a>
+            <a href="galleria.html">Galleria</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
         </li>
     </div>
     <main>
@@ -48,59 +49,46 @@
             </div>
         </section>
     </main>
-    <section class="services">
-        <div class="services-container">
-            <h1 class="service-title">Palvelumme</h1>
-            <div class="service">
-                <img src="painting.jpg" alt="Maalaus">
-                <h3>Maalaus</h3>
-                <p>Sisämaalaus: Ammattitaitoiset maalaustyöt kaikille sisäpinnoille, kuten seinille, katoille, ovien ja ikkunoiden kehyksille. <br>Ulkomaalaus: Ulkoseinien ja julkisivujen maalaus, joka parantaa kodin ulkonäköä ja suojaa sitä sääolosuhteilta.<br> Erikoispinnat: Erityisten pintojen, kuten kipsilevyjen, tiilien tai puupintojen maalaus, jossa tarvitaan erikoisosaamista ja oikeita maalivalintoja.</p>
+    <footer class="footer bg-dark text-white pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 style="color: white;">Tietoa meistä</h5>
+              <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys. </p>
             </div>
-            <div class="service1">
-                <img src="wallpaper.jpg" alt="Tapetointi">
-                <h3>Tapetointi</h3>
-                <p>Tapettien asennus: Korkealaatuisten tapettien asennus erilaisille seinäpinnoille, olipa kyseessä sitten perinteiset paperitapetit, kuitutapetit tai muut erikoismateriaalit.<br>Tapettien poisto: Vanhojen tapettien poisto ja seinien valmistelu uutta tapetointia tai maalausta varten.<br>Tapettivalikoima: Laaja valikoima korkealaatuisia ja tyylikkäitä tapetteja eri tyyleihin ja budjetteihin, tarjoten asiakkaille mahdollisuuden löytää juuri heidän tarpeisiinsa sopiva vaihtoehto.</p>
+            <div class="col-md-4">
+              <h5 style="color: white;">Linkit</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Etusivu</a></li>
+                <li><a href="#" class="text-white">Palvelut</a></li>
+                <li><a href="#" class="text-white">Värien testaus</a></li>
+                <li><a href="#" class="text-white">Galleria</a></li>
+                <li><a href="#" class="text-white">Yhteystiedot</a></li>
+              </ul>
             </div>
+            <div class="col-md-4">
+              <h5 style="color: white;">Contact Us</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Email: info@example.com</a></li>
+                <li><a href="#" class="text-white">Phone: (123) 456-7890</a></li>
+                <li><a href="#" class="text-white">Address: 123 Main St, Anytown, USA</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <h1 class="title">Värien testaus</h1>
-    <h2 class="colorName">Väri</h2>
+      </footer>
 
-    <input type="radio" id="colorDiv1" name="colordiv" value="1" onclick="saveChoice(this)">
-    <label for="colorDiv1">Valitse pinta 1</label>
-    <input type="radio" id="colorDiv2" name="colordiv" value="2" onclick="saveChoice(this)">
-    <label for="colorDiv2">Valitse pinta 2</label>
-
-    <div class="container1">
-        <div class="color1">
-            <p></p>
-        </div>
-        <div class="color2">
-            <p></p>
-        </div>
-    </div>
-
-    <button class="resetButton" type="button">Palauta</button>
-    
-    <button class="colorButton" id="fiesta" type="button"></button>
-    <button class="colorButton" id="jester_red" type="button"></button>
-    <button class="colorButton" id="turmeric" type="button"></button>
-    <button class="colorButton" id="living_colar" type="button"></button>
-    <button class="colorButton" id="pink_peacock" type="button"></button>
-    <button class="colorButton" id="pepper_stem" type="button"></button>
-    <button class="colorButton" id="aspen_gold" type="button"></button>
-    <button class="colorButton" id="princess_blue" type="button"></button>
-
-    <button class="colorButton" id="toffee" type="button"></button>
-    <button class="colorButton" id="mango_mojito" type="button"></button>
-    <button class="colorButton" id="terrarium_moss" type="button"></button>
-    <button class="colorButton" id="sweet_lilac" type="button"></button>
-    <button class="colorButton" id="soybean" type="button"></button>
-    <button class="colorButton" id="eclipse" type="button"></button>
-    <button class="colorButton" id="sweet_corn" type="button"></button>
-    <button class="colorButton" id="brown_granite" type="button"></button>
 
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
