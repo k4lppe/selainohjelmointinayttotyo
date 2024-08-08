@@ -1,13 +1,26 @@
 
 $(document).ready(function(){
 
-    let activeRadio;
+    let activeRadio1;
     $('input[name="colordiv"]').change(function(){
         activeRadio = $(this).val(); // Päivitä activeRadio valitulla arvolla
     });
 
+    let activeRadio;
+    
+    function saveChoice(element){
+        activeRadio = $(element).data('value');
+    }
+
+    $('.container1 div').click(function() {
+        activeRadio = $(this).data('value');
+    });
+
     $(".colorName").hide();
     
+        $(".resetButton").click(function(){
+            $(".colorName").hide();
+        })
     
         $("#fiesta").click(function(){
             $(".color" + activeRadio).css("background-color", "#DD4132");

@@ -1,246 +1,179 @@
+/* Yleinen tyyli */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
+/* Otsikot */
+.title {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 60px;
+    color: #333;
+    font-weight: bold;
+}
 
-.container1{
+.colorName {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Säiliöt */
+.container1 {
     display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
-.color1{
-    
-    position: absolute;
-    top: 250px;
-    left: 160px;
-    width: 800px;
+
+.color1, .color2 {
+    width: 45%;
     height: 500px;
-}
-.color2{
-    
-    position: absolute;
-    top: 250px;
-    left: 960px;
-    width: 800px;
-    height: 500px;
-}
-.title{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 120px;
-    position: absolute;
-    top: -30px;
-    left: 820px;
-}
-.colorName{
-    text-align: center;
-    font-size: 30px;
-    top: 140px;
-    left: 820px;
-    z-index: 999;
-    position: absolute;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
 }
 
-input[type="radio"]#colorDiv1,
-input[type="radio"]#colorDiv2 {
-    display: none;
+.color1:hover, .color2:hover {
+    transform: scale(1.05);
 }
 
-        /* Style the label as a custom radio button for colorDiv1 */
-        label[for="colorDiv1"] {
-            display: inline-block;
-            position: absolute;
-            padding-left: 35px;
-            margin-right: 15px;
-            cursor: pointer;
-            font-size: 18px;
-            user-select: none;
-            top: 200px;
-            left: 480px;
-        }
-
-        /* Custom radio button appearance for colorDiv1 */
-        label[for="colorDiv1"]::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 25px;
-            height: 25px;
-            border: 2px solid #000;
-            border-radius: 50%;
-            background-color: #fff;
-        }
-
-        /* Custom appearance when colorDiv1 is checked */
-        input[type="radio"]#colorDiv1:checked + label[for="colorDiv1"]::before {
-            background-color: red;
-        }
-
-        /* Inner dot for the checked state for colorDiv1 */
-        input[type="radio"]#colorDiv1:checked + label[for="colorDiv1"]::after {
-            content: "";
-            position: absolute;
-            left: 9px;
-            top: 9px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: white;
-        }
-
-        /* Repeat for another radio button (colorDiv2) */
-        label[for="colorDiv2"] {
-            display: inline-block;
-            position: absolute;
-            padding-left: 35px;
-            margin-right: 15px;
-            cursor: pointer;
-            font-size: 18px;
-            user-select: none;
-            top: 200px;
-            left: 1300px;
-        }
-
-        label[for="colorDiv2"]::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 25px;
-            height: 25px;
-            border: 2px solid #000;
-            border-radius: 50%;
-            background-color: #fff;
-        }
-
-        input[type="radio"]#colorDiv2:checked + label[for="colorDiv2"]::before {
-            background-color: red;
-        }
-
-        input[type="radio"]#colorDiv2:checked + label[for="colorDiv2"]::after {
-            content: "";
-            position: absolute;
-            left: 9px;
-            top: 9px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: white;
-        }
-
-
-.resetButton{
-    position: absolute;
-    top: 790px;
-    left: 320px;
-    width: 150px;
-    height: 80px;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-size: 25px;
-    color: white;
-    background-color: #949494;
-    text-shadow: 2px 2px 2px #d1d1d1;
+/* Nappulat */
+.resetButton {
+    display: block;
+    margin: 40px auto;
+    width: 160px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #5a5a5a;
+    text-shadow: 2px 2px 2px #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
-.colorButton{
+
+.resetButton:hover {
+    background-color: #333;
+}
+
+.colorButton {
     width: 90px;
     height: 50px;
     border: none;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
-#fiesta{
-    background-color: #DD4132;
-    position: absolute;
-    top: 760px;
-    left: 560px;
+
+.colorButton:hover {
+    transform: scale(1.1);
 }
-#jester_red{
-    background-color: #9E1030;
-    position: absolute;
-    top: 760px;
-    left: 660px;
+
+/* Värit */
+#fiesta { background-color: #DD4132; }
+#jester_red { background-color: #9E1030; }
+#turmeric { background-color: #FE840E; }
+#living_colar { background-color: #FF6F61; }
+#pink_peacock { background-color: #C62168; }
+#pepper_stem { background-color: #8D9440; }
+#aspen_gold { background-color: #FFD662; }
+#princess_blue { background-color: #00539C; }
+#toffee { background-color: #755139; }
+#mango_mojito { background-color: #D69C2F; }
+#terrarium_moss { background-color: #616247; }
+#sweet_lilac { background-color: #E8B5CE; }
+#soybean { background-color: #D2C29D; }
+#eclipse { background-color: #343148; }
+#sweet_corn { background-color: #F0EAD6; }
+#brown_granite { background-color: #615550; }
+
+/* Valintapainikkeet */
+input[type="radio"] {
+    display: none;
 }
-#turmeric{
-    background-color: #FE840E;
-    position: absolute;
-    top: 760px;
-    left: 760px;
+
+label {
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    display: inline-block;
+    margin: 10px;
 }
-#living_colar{
-    background-color: #FF6F61;
-    position: absolute;
-    top: 760px;
-    left: 860px;
+
+label::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: background-color 0.3s ease-in-out;
 }
-#pink_peacock{
-    background-color: #C62168;
-    position: absolute;
-    top: 760px;
-    left: 960px;
+
+input[type="radio"]:checked + label::before {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
 }
-#pepper_stem{
-    background-color: #8D9440;
-    position: absolute;
-    top: 760px;
-    left: 1060px;
+
+input[type="radio"]:checked + label::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: -15px;
+    left: 6px;
 }
-#aspen_gold{
-    background-color: #FFD662;
-    position: absolute;
-    top: 760px;
-    left: 1160px;
-}
-#princess_blue{
-    background-color: #00539C;
-    position: absolute;
-    top: 760px;
-    left: 1260px;
-}
-#toffee{
-    background-color:  #755139;
-    position: absolute;
-    top: 820px;
-    left: 560px;
-}
-#mango_mojito{
-    background-color: #D69C2F;
-    position: absolute;
-    top: 820px;
-    left: 660px;
-}
-#terrarium_moss{
-    background-color: #616247;
-    position: absolute;
-    top: 820px;
-    left: 760px;
-}
-#sweet_lilac{
-    background-color: #E8B5CE;
-    position: absolute;
-    top: 820px;
-    left: 860px;
-}
-#soybean{
-    background-color: #D2C29D;
-    position: absolute;
-    top: 820px;
-    left: 960px;
-}
-#eclipse{
-    background-color: #343148;
-    position: absolute;
-    top: 820px;
-    left: 1060px;
-}
-#sweet_corn{
-    background-color: #F0EAD6;
-    position: absolute;
-    top: 820px;
-    left: 1160px;
-}
-#brown_granite{
-    background-color:#615550;
-    position: absolute;
-    top: 820px;
-    left: 1260px;
-}
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-    #profile-icon {
-        display: none;
+
+/* Responsiivisuus */
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 32px;
+        margin-top: 80px;
+    }
+
+    .colorName {
+        font-size: 20px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .color1, .color2 {
+        width: 90%;
+        height: 300px;
+    }
+
+    .resetButton {
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .colorButton {
+        width: 70px;
+        height: 40px;
+    }
+
+    label {
+        font-size: 16px;
     }
 }

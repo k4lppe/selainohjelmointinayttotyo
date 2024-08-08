@@ -8,16 +8,26 @@
     <link rel="stylesheet" type="text/css" href="yhteystiedot.css">
 </head>
 <body>
-    <div class="navbar">
-        <li class="navbuttons">
-            <a href="index.html">Etusivu</a>
-            <a href="palvelut.html">Palvelut</a>
-            <a href="varientestaus.html">Värien testaus</a>
-            <a href="galleria.html">Galleria</a>
-            <a href="yhteystiedot.html">Yhteystiedot</a>
-        </li>
+    <div class="navbar1">
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <ul class="navbuttons" id="navbuttons">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="palvelut.html">Palvelut</a></li>
+            <li><a href="varientestaus.html">Värien testaus</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
+            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
     </div>
     <h1 class="yhetystiedot-title">Yhteystiedot</h1>
-
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navbuttons");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+      </script>
 </body>
 </html>

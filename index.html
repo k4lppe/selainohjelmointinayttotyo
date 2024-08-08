@@ -1,94 +1,108 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Etusivu - Kotkantien maalaus ja tapetointi</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Etusivu - Kotkantien maalaus ja tapetointi</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
-    <div class="navbar">
-        <li class="navbuttons">
-            <a href="index.html">Etusivu</a>
-            <a href="palvelut.html">Palvelut</a>
-            <a href="varientestaus.html">Värien testaus</a>
-            <a href="galleria.html">Galleria</a>
-            <a href="yhteystiedot.html">Yhteystiedot</a>
-        </li>
-    </div>
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1 class="text-with-border">Kotkantien maalaus ja tapetointi</h1>
-                <a href="#" class="cta">Ota yhteyttä</a>
-            </div>
-        </section>
-        <section class="features">
-            <div class="container">
-                <div class="feature">
-                    <i class="fas fa-cogs"></i>
-                    <h2>Maalaus</h2>
-                    <p>Maalaamme haluamasi pinnat ammattitaidolla!</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-lightbulb"></i>
-                    <h2>Tapetointi</h2>
-                    <p>Tapetoimme seinäsi hienoilla tapeteilla!</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-chart-line"></i>
-                    <h2>Edullisuus</h2>
-                    <p>Saat palvelumme oikein edulliseen hintaan!</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer bg-dark text-white pt-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h5 style="color: white;">Tietoa meistä</h5>
-              <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys. </p>
-            </div>
-            <div class="col-md-4">
-              <h5 style="color: white;">Linkit</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Etusivu</a></li>
-                <li><a href="#" class="text-white">Palvelut</a></li>
-                <li><a href="#" class="text-white">Värien testaus</a></li>
-                <li><a href="#" class="text-white">Galleria</a></li>
-                <li><a href="#" class="text-white">Yhteystiedot</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h5 style="color: white;">Contact Us</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Email: info@example.com</a></li>
-                <li><a href="#" class="text-white">Phone: (123) 456-7890</a></li>
-                <li><a href="#" class="text-white">Address: 123 Main St, Anytown, USA</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md-12 text-center">
-              <p>&copy; 2024 Your Company. All rights reserved.</p>
-            </div>
-          </div>
+  <div class="navbar1">
+    <span class="hamburger" onclick="toggleMenu()">☰</span>
+    <ul class="navbuttons" id="navbuttons">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="palvelut.html">Palvelut</a></li>
+      <li><a href="varientestaus.html">Värien testaus</a></li>
+      <li><a href="galleria.html">Galleria</a></li>
+      <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+    </ul>
+  </div>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="text-with-border">Kotkantien maalaus ja tapetointi</h1>
+        <a href="yhteystiedot.html" class="cta">Ota yhteyttä</a>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <i class="fas fa-cogs"></i>
+          <h2>Maalaus</h2>
+          <p>Maalaamme haluamasi pinnat ammattitaidolla!</p>
         </div>
-      </footer>
+        <div class="feature">
+          <i class="fas fa-lightbulb"></i>
+          <h2>Tapetointi</h2>
+          <p>Tapetoimme seinäsi hienoilla tapeteilla!</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-chart-line"></i>
+          <h2>Edullisuus</h2>
+          <p>Saat palvelumme oikein edulliseen hintaan!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 style="color: white;">Tietoa meistä</h5>
+          <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys. </p>
+        </div>
+        <div class="col-md-4">
+          <h5 style="color: white;">Linkit</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Etusivu</a></li>
+            <li><a href="palvelut.html" class="text-white">Palvelut</a></li>
+            <li><a href="varientestaus.html" class="text-white">Värien testaus</a></li>
+            <li><a href="galleria.html" class="text-white">Galleria</a></li>
+            <li><a href="yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 style="color: white;">Yhteystiedot</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Sähköposti: info@kotkantienmaalaus.fi</a></li>
+            <li><a href="#" class="text-white">Puhelin: 044 999 888 99</a></li>
+            <li><a href="#" class="text-white">Osoite: Kotkantie 3, 90100 Oulu</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Kotkantienmaalaus ja tapetointi. Kaikki oikeudet pidätetään.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <script>
+    function toggleMenu() {
+        var menu = document.getElementById("navbuttons");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+  </script>
 
-
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
