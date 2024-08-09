@@ -57,6 +57,9 @@
     transform: scale(1.1);
 }
 
+.navbar1{
+  margin-top: -2px;
+}
 .modal {
     display: none;
     position: fixed;
@@ -93,4 +96,9 @@
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.footer{
+  position: relative;
+  top: 1000px;
 }
