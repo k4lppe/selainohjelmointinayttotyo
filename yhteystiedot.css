@@ -58,3 +58,11 @@
     position: relative;
     top: 200px;
 }
+@media only screen {
+    .textinfo{
+        width: 100%;
+    }
+    .namelabel{
+        width: 90%;
+    }
+}

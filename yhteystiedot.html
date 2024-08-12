@@ -24,11 +24,11 @@
     </div>
 
     <div class="info">
-        <h1 class="title">Yhteydenottolomake</h1>
+        <h1 class="title">Ota yhteyttä!</h1>
         <label class="namelabel" for="entername">Nimi:</label>
         <input type="text" class="entername" name="entername"><br><br>
         <label class="emaillabel" for="enteremail">Sähköposti:</label>
-        <input type="email" class="enteremail" name="enteremail"><br><br>
+        <input type="email" class="enteremail" name="enteremail" pattern="^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$" required><br><br>
         
         <label for="optionsa">Valitse Aihe:</label>
         <select name="options" id="options">
@@ -38,7 +38,7 @@
         </select>
         <br><br>
         <textarea class="textinfo" name="textinfo" rows="5" cols="50" placeholder="Kerro lisätietoa"></textarea><br><br>
-        <input type="submit" class="submit-btn">
+        <button type="submit" class="submit-btn" onclick="submit()">Lähetä</button>
     </div>
 
 
@@ -50,6 +50,10 @@
             } else {
                 menu.style.display = "block";
             }
+        }
+
+        function submit() {
+          alert("Lomake lähetetty onnistuneesti!");
         }
       </script>
 
