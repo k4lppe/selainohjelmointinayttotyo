@@ -1,16 +1,59 @@
-.footer{
-    position: absolute;
-    top: 1100px;
-    width: 100%;
+/* Centering Images and Titles */
+.services-container {
+    margin-left: auto;
+    margin-right: auto; /* Center the container */
+    width: 90%; /* Optional: Adjust the width for better responsiveness */
 }
-@media only screen and (max-width: 414px){
+
+.service-title {
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* Images within services-container */
+.services-container img {
+    display: block;
+    margin: 0 auto; /* Center align images */
+    max-width: 100%; /* Ensure images are responsive */
+}
+
+/* For general heading alignment */
+h5 {
+    color: white; /* White color for h5 headings */
+}
+
+/* Info section styling */
+.info {
+    color: white; /* Ensure text in info section is white */
+    text-align: center; /* Center-align text in the info section */
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width: 320px) {
     .services-container {
         margin-left: auto;
-        margin-right: auto; /* Center the container if needed */
-        width: 90%; /* Optional: Adjust the width for better responsiveness */
+        margin-right: auto; /* Center the container */
+        width: 90%; /* Adjust the width if needed */
     }
+
     .service-title {
-        margin-left: 0; /* Adjust the margin as needed */
-        text-align: center; /* Optional: Center align the title */
+        margin-left: 0; /* Remove margin-left */
+        text-align: center; /* Center-align the title */
+    }
+
+    /* Ensure footer positioning for smaller screens */
+    .footer {
+        position: absolute;
+        top: 1600px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    /* Ensure footer positioning for larger screens */
+    .footer {
+        position: absolute;
+        top: 1100px;
+        width: 100%;
     }
 }

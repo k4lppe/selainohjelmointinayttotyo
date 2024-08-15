@@ -53,39 +53,6 @@ h1{
     color: white;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .navbuttons {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbuttons a {
-        text-align: left;
-        padding: 10px;
-        border-top: 1px solid #444;
-        border-bottom: 1px solid #444;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-    #profile-icon {
-        display: none;
-    }
-    .navbuttons {
-        flex-wrap: wrap; /* Kääri linkit, jos tila ei riitä */
-        justify-content: center; /* Keskittää linkit mobiilinäkymässä */
-    }
-
-    .navbuttons li {
-        flex: 1 0 50%; /* Asettaa linkkien leveyden mobiilinäkymässä */
-    }
-}
 
 
 .container {

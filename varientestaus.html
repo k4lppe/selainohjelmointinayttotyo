@@ -2,125 +2,130 @@
 <html lang="fi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Värien testaus - Kotkantien maalaus ja tapetointi</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="varientestaus.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Värien testaus - Kotkantien maalaus ja tapetointi</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <!-- Omat CSS-tiedostot -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="varientestaus.css">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="varientestaus.js"></script>
 </head>
 
 <body>
-    <div class="navbar1">
-        <span class="hamburger" onclick="toggleMenu()">☰</span>
-        <ul class="navbuttons" id="navbuttons">
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="varientestaus.html">Värien testaus</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Kotkantien Maalaus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+        <li class="nav-item"><a class="nav-link" href="palvelut.html">Palvelut</a></li>
+        <li class="nav-item"><a class="nav-link" href="varientestaus.html">Värien testaus</a></li>
+        <li class="nav-item"><a class="nav-link" href="galleria.html">Galleria</a></li>
+        <li class="nav-item"><a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <h1 class="title">Värien testaus, valise ensin pinta ja sitten väri.</h1>
-    <h2 class="colorName">Väri</h2>
+  <h1 class="title">Värien testaus, valitse ensin pinta ja sitten väri.</h1>
+  <h2 class="colorName">Väri</h2>
 
-    <div class="container1">
-        <div class="color1" id="colorDiv1" data-value="1" onclick="saveChoice(this)">
-            <p></p>
-        </div>
-        <div class="color2" id="colorDiv2" data-value="2" onclick="saveChoice(this)">
-            <p></p>
-        </div>
+  <div class="container1">
+    <div class="color1" id="colorDiv1" data-value="1" onclick="saveChoice(this)">
+      <p></p>
     </div>
-
-    <button class="resetButton" type="button">Palauta</button>
-
-    <div class="colorButtons">
-        <button class="colorButton" id="fiesta" type="button"></button>
-        <button class="colorButton" id="jester_red" type="button"></button>
-        <button class="colorButton" id="turmeric" type="button"></button>
-        <button class="colorButton" id="living_colar" type="button"></button>
-        <button class="colorButton" id="pink_peacock" type="button"></button>
-        <button class="colorButton" id="pepper_stem" type="button"></button>
-        <button class="colorButton" id="aspen_gold" type="button"></button>
-        <button class="colorButton" id="princess_blue" type="button"></button>
-
-        <button class="colorButton" id="toffee" type="button"></button>
-        <button class="colorButton" id="mango_mojito" type="button"></button>
-        <button class="colorButton" id="terrarium_moss" type="button"></button>
-        <button class="colorButton" id="sweet_lilac" type="button"></button>
-        <button class="colorButton" id="soybean" type="button"></button>
-        <button class="colorButton" id="eclipse" type="button"></button>
-        <button class="colorButton" id="sweet_corn" type="button"></button>
-        <button class="colorButton" id="brown_granite" type="button"></button>
+    <div class="color2" id="colorDiv2" data-value="2" onclick="saveChoice(this)">
+      <p></p>
     </div>
-    
-    <footer class="footer bg-dark text-white pt-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h5 style="color: white;">Tietoa meistä</h5>
-              <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys. </p>
-            </div>
-            <div class="col-md-4">
-              <h5 style="color: white;">Linkit</h5>
-              <ul class="list-unstyled">
-                <li><a href="index.html" class="text-white">Etusivu</a></li>
-                <li><a href="palvelut.html" class="text-white">Palvelut</a></li>
-                <li><a href="varientestaus.html" class="text-white">Värien testaus</a></li>
-                <li><a href="galleria.html" class="text-white">Galleria</a></li>
-                <li><a href="yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h5 style="color: white;">Yhteystiedot</h5>
-              <ul class="list-unstyled">
-                <p class="text-white">Sähköposti: info@kotkantienmaalaus.fi</p>
-                <p class="text-white">Puhelin: 044 999 888 99</p>
-                <p class="text-white">Osoite: Kotkantie 3, 90100 Oulu</p>
-              </ul>
-            </div>
-          </div>
-          <div class="logos">
-            <p><a href="https://www.youtube.com/">
-              <img src="youtubelogo.png" alt="YouTube" class="youtubelogo">
-            </a></p>
-            <p><a href="https://www.instagram.com/">
-              <img src="insta-logo.png" alt="Instagram" class="instagramlogo">
-            </a></p>
-            <p><a href="https://x.com/home?lang=fi">
-              <img src="xlogo.webp" alt="X" class="xlogo">
-            </a></p>
-            <p><a href="https://www.facebook.com/">
-              <img src="facebooklogo.png" alt="Facebook" class="facebooklogo">
-            </a></p>
-            
-          </div>
-          <div class="row mt-3">
-            <div class="col-md-12 text-center">
-              <p>&copy; 2024 Kotkantienmaalaus ja tapetointi. Kaikki oikeudet pidätetään.</p>
-            </div>
-          </div>
+  </div>
+
+  <button class="resetButton" type="button">Palauta</button>
+
+  <div class="colorButtons">
+    <button class="colorButton" id="fiesta" type="button"></button>
+    <button class="colorButton" id="jester_red" type="button"></button>
+    <button class="colorButton" id="turmeric" type="button"></button>
+    <button class="colorButton" id="living_colar" type="button"></button>
+    <button class="colorButton" id="pink_peacock" type="button"></button>
+    <button class="colorButton" id="pepper_stem" type="button"></button>
+    <button class="colorButton" id="aspen_gold" type="button"></button>
+    <button class="colorButton" id="princess_blue" type="button"></button>
+    <button class="colorButton" id="toffee" type="button"></button>
+    <button class="colorButton" id="mango_mojito" type="button"></button>
+    <button class="colorButton" id="terrarium_moss" type="button"></button>
+    <button class="colorButton" id="sweet_lilac" type="button"></button>
+    <button class="colorButton" id="soybean" type="button"></button>
+    <button class="colorButton" id="eclipse" type="button"></button>
+    <button class="colorButton" id="sweet_corn" type="button"></button>
+    <button class="colorButton" id="brown_granite" type="button"></button>
+  </div>
+
+  <footer class="footer bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 style="color: white;">Tietoa meistä</h5>
+          <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys.</p>
         </div>
-      </footer>
+        <div class="col-md-4">
+          <h5 style="color: white;">Linkit</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Etusivu</a></li>
+            <li><a href="palvelut.html" class="text-white">Palvelut</a></li>
+            <li><a href="varientestaus.html" class="text-white">Värien testaus</a></li>
+            <li><a href="galleria.html" class="text-white">Galleria</a></li>
+            <li><a href="yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 style="color: white;">Yhteystiedot</h5>
+          <ul class="list-unstyled">
+            <p class="text-white">Sähköposti: info@kotkantienmaalaus.fi</p>
+            <p class="text-white">Puhelin: 044 999 888 99</p>
+            <p class="text-white">Osoite: Kotkantie 3, 90100 Oulu</p>
+          </ul>
+        </div>
+      </div>
+      <div class="logos">
+        <p><a href="https://www.youtube.com/">
+          <img src="youtubelogo.png" alt="YouTube" class="youtubelogo">
+        </a></p>
+        <p><a href="https://www.instagram.com/">
+          <img src="insta-logo.png" alt="Instagram" class="instagramlogo">
+        </a></p>
+        <p><a href="https://x.com/home?lang=fi">
+          <img src="xlogo.webp" alt="X" class="xlogo">
+        </a></p>
+        <p><a href="https://www.facebook.com/">
+          <img src="facebooklogo.png" alt="Facebook" class="facebooklogo">
+        </a></p>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Kotkantienmaalaus ja tapetointi. Kaikki oikeudet pidätetään.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navbuttons");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
-    </script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <!-- Popper.js (Bootstrapin vaatimuksena) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Oma JavaScript-tiedosto -->
+  <script src="varientestaus.js"></script>
 </body>
 
 </html>

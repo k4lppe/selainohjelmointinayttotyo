@@ -1,104 +1,195 @@
-.gallery-title{
-    position: absolute;
-    top: 100px;
-    left: 780px;
-    font-size: 40px;
-  }
-  #picture1{
-    position: absolute;
-    left: 100px;
-    top: 250px;
-  }
-  #picture2{
-    position: absolute;
-    top: 250px;
-    left: 600px;
-  }
-  #picture3{
-    position: absolute;
-    top: 250px;
-    left: 1030px;
-  }
-  #picture4{
-    position: absolute;
-    top: 250px;
-    left: 1520px;
-  }
-  #picture5{
-    position: absolute;
-    top: 560px;
-    left: 1000px;
-  }
-  #picture6{
-    position: absolute;
-    top: 540px;
-    left: 600px;
-  }
-  .images img:hover{
-    transform: scale(1.1);
-    transition: 0.2s;
-  }
-  .images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+/* Yleiset tyylit */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Gallerian otsikko */
+.gallery-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+/* Kuvagalleria */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
 }
 
 .preview-image {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease-out;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
 }
 
 .preview-image:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.navbar1{
-  margin-top: -2px;
-}
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-    object-fit: contain;
-    margin-bottom: 20px;
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
 .close {
-    color: #fff;
-    font-size: 3em;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    cursor: pointer;
-    margin-top: 40px;
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000; /* Varmistaa, että sulkupainike on päällä */
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.footer{
-  position: relative;
-  top: 1000px;
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
 }
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .logos img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+@media only screen and (min-width: 801px){
+  .images{
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  /* Gallerian otsikko */
+.gallery-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Kuvagalleria */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Keskittää kuvat riville */
+  gap: 10px; /* Lisää tilaa kuvien väliin */
+}
+
+.image-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 kuvaa rivillä, huomioi väli */
+  max-width: calc(33.333% - 20px); /* Rajoittaa kuvien leveyden */
+  box-sizing: border-box;
+  padding: 10px; /* Lisää hieman tilaa kuvan ympärille */
+}
+
+.preview-image {
+  width: 100%; /* Täyttää säilön leveyden */
+  height: auto; /* Säilyttää kuvasuhteen */
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  border: 2px solid #ddd; /* Lisää hieman tyyliä kuviin */
+  border-radius: 8px; /* Pyöristä kulmia */
+}
+
+.preview-image:hover {
+  transform: scale(1.1);
+}
+
+/* Modali */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 
+
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .gallery-title {
+      font-size: 1.5em;
+  }
+
+  .footer .container {
+      padding: 0 15px;
+  }
+
+  .footer .logos img {
+      width: 25px;
+  }
+  .modal-content {
+    max-width: 80%;
+    max-height: 70%;
+}
+
+.close {
+    font-size: 2.5em;
+    top: 10px;
+    right: 10px;
+}
+
+}
+
+@media (max-width: 576px) {
+  .gallery-title {
+      font-size: 1.2em;
+  }
+
+  .footer .logos img {
+      width: 20px;
+  }
+
+  .footer {
+      padding: 10px 0;
+  }
+  .modal-content {
+    max-width: 90%;
+    max-height: 60%;
+}
+
+.close {
+    font-size: 2em;
+    top: 5px;
+    right: 5px;
+}
+
+}
+
+

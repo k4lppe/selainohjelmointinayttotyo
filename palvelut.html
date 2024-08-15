@@ -5,95 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Palvelut - Kotkantien maalaus ja tapetointi</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="palvelut.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="palvelut.css">
 </head>
 <body>
-    <div class="navbar1">
-        <span class="hamburger" onclick="toggleMenu()">☰</span>
-        <ul class="navbuttons" id="navbuttons">
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="varientestaus.html">Värien testaus</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-        </ul>
-    </div>
-    <section class="services">
-        <div class="services-container">
-            <h1 class="service-title">Palvelumme</h1>
-            <div class="service">
-                <img src="painting.jpg" alt="Maalaus">
-                <h3>Maalaus</h3>
-                <p>Sisämaalaus: Ammattitaitoiset maalaustyöt kaikille sisäpinnoille, kuten seinille, katoille, ovien ja ikkunoiden kehyksille. <br><br>Ulkomaalaus: Ulkoseinien ja julkisivujen maalaus, joka parantaa kodin ulkonäköä ja suojaa sitä sääolosuhteilta.<br><br> Erikoispinnat: Erityisten pintojen, kuten kipsilevyjen, tiilien tai puupintojen maalaus, jossa tarvitaan erikoisosaamista ja oikeita maalivalintoja.</p>
-            </div>
-            <div class="service1">
-                <img src="wallpaper.jpg" alt="Tapetointi">
-                <h3>Tapetointi</h3>
-                <p>Tapettien asennus: Korkealaatuisten tapettien asennus erilaisille seinäpinnoille, olipa kyseessä sitten perinteiset paperitapetit, kuitutapetit tai muut erikoismateriaalit.<br><br>Tapettien poisto: Vanhojen tapettien poisto ja seinien valmistelu uutta tapetointia tai maalausta varten.<br><br>Tapettivalikoima: Laaja valikoima korkealaatuisia ja tyylikkäitä tapetteja eri tyyleihin ja budjetteihin, tarjoten asiakkaille mahdollisuuden löytää juuri heidän tarpeisiinsa sopiva vaihtoehto.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Kotkantien Maalaus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+                <li class="nav-item"><a class="nav-link" href="palvelut.html">Palvelut</a></li>
+                <li class="nav-item"><a class="nav-link" href="varientestaus.html">Värien testaus</a></li>
+                <li class="nav-item"><a class="nav-link" href="galleria.html">Galleria</a></li>
+                <li class="nav-item"><a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="services py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Palvelumme</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="painting.jpg" class="card-img-top" alt="Maalaus">
+                        <div class="card-body">
+                            <h3 class="card-title">Maalaus</h3>
+                            <p class="card-text">
+                                Sisämaalaus: Ammattitaitoiset maalaustyöt kaikille sisäpinnoille.<br>
+                                Ulkomaalaus: Ulkoseinien ja julkisivujen maalaus.<br>
+                                Erikoispinnat: Erityisten pintojen maalaus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="wallpaper.jpg" class="card-img-top" alt="Tapetointi">
+                        <div class="card-body">
+                            <h3 class="card-title">Tapetointi</h3>
+                            <p class="card-text">
+                                Tapettien asennus: Korkealaatuisten tapettien asennus.<br>
+                                Tapettien poisto: Vanhojen tapettien poisto.<br>
+                                Tapettivalikoima: Laaja valikoima tyylikkäitä tapetteja.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-   
-     <footer class="footer bg-dark text-white pt-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 style="color: white;">Tietoa meistä</h5>
-          <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys. </p>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Tietoa meistä</h5>
+                    <p class="info">Olemme tapetointiin ja maalaukseen keskittynyt yritys.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="linkit">Linkit</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Etusivu</a></li>
+                        <li><a href="palvelut.html" class="text-white">Palvelut</a></li>
+                        <li><a href="varientestaus.html" class="text-white">Värien testaus</a></li>
+                        <li><a href="galleria.html" class="text-white">Galleria</a></li>
+                        <li><a href="yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="yhteystiedot">Yhteystiedot</h5>
+                    <ul class="list-unstyled">
+                        <p class="text-white">Sähköposti: info@kotkantienmaalaus.fi</p>
+                        <p class="text-white">Puhelin: 044 999 888 99</p>
+                        <p class="text-white">Osoite: Kotkantie 3, 90100 Oulu</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="logos text-center">
+                <a href="https://www.youtube.com/"><img src="youtubelogo.png" alt="YouTube" class="mx-2" style="height:30px;"></a>
+                <a href="https://www.instagram.com/"><img src="insta-logo.png" alt="Instagram" class="mx-2" style="height:30px;"></a>
+                <a href="https://x.com/home?lang=fi"><img src="xlogo.webp" alt="X" class="mx-2" style="height:30px;"></a>
+                <a href="https://www.facebook.com/"><img src="facebooklogo.png" alt="Facebook" class="mx-2" style="height:30px;"></a>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Kotkantien maalaus ja tapetointi. Kaikki oikeudet pidätetään.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h5 style="color: white;">Linkit</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white">Etusivu</a></li>
-            <li><a href="palvelut.html" class="text-white">Palvelut</a></li>
-            <li><a href="varientestaus.html" class="text-white">Värien testaus</a></li>
-            <li><a href="galleria.html" class="text-white">Galleria</a></li>
-            <li><a href="yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5 style="color: white;">Yhteystiedot</h5>
-          <ul class="list-unstyled">
-            <p class="text-white">Sähköposti: info@kotkantienmaalaus.fi</p>
-            <p class="text-white">Puhelin: 044 999 888 99</p>
-            <p class="text-white">Osoite: Kotkantie 3, 90100 Oulu</p>
-          </ul>
-        </div>
-      </div>
-      <div class="logos">
-        <p><a href="https://www.youtube.com/">
-          <img src="youtubelogo.png" alt="YouTube" class="youtubelogo">
-        </a></p>
-        <p><a href="https://www.instagram.com/">
-          <img src="insta-logo.png" alt="Instagram" class="instagramlogo">
-        </a></p>
-        <p><a href="https://x.com/home?lang=fi">
-          <img src="xlogo.webp" alt="X" class="xlogo">
-        </a></p>
-        <p><a href="https://www.facebook.com/">
-          <img src="facebooklogo.png" alt="Facebook" class="facebooklogo">
-        </a></p>
-        
-      </div>
-      <div class="row mt-3">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2024 Kotkantienmaalaus ja tapetointi. Kaikki oikeudet pidätetään.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-      <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navbuttons");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
-      </script>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -7,31 +7,6 @@ body {
     padding: 0;
     line-height: 1.6;
 }
-.navbar1{
-    margin-top: -62px;
-    font-size: 16px;
-
-}
-.navbuttons {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    z-index: 999;
-}
-
-.navbuttons a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.navbuttons a:hover {
-    color: white;
-    text-decoration: none;
-}
 
 /* Otsikot */
 .title {

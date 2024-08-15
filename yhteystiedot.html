@@ -4,108 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yhteystiedot - Kotkantien maalaus ja tapetointi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Omat CSS-tiedostot -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="yhteystiedot.css">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="navbar1">
-        <span class="hamburger" onclick="toggleMenu()">☰</span>
-        <ul class="navbuttons" id="navbuttons">
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="varientestaus.html">Värien testaus</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Kotkantien Maalaus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+                <li class="nav-item"><a class="nav-link" href="palvelut.html">Palvelut</a></li>
+                <li class="nav-item"><a class="nav-link" href="varientestaus.html">Värien testaus</a></li>
+                <li class="nav-item"><a class="nav-link" href="galleria.html">Galleria</a></li>
+                <li class="nav-item"><a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="info">
         <h1 class="title">Ota yhteyttä!</h1>
-        <label class="namelabel" for="entername">Nimi:</label>
-        <input type="text" class="entername" name="entername"><br><br>
-        <label class="emaillabel" for="enteremail">Sähköposti:</label>
-        <input type="email" class="enteremail" name="enteremail" pattern="^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$" required><br><br>
-        
-        <label for="optionsa">Valitse Aihe:</label>
-        <select name="options" id="options">
-            <option value="service">Haluan tilata palveluitanne</option>
-            <option value="complain">Haluan tehdä valituksen</option>
-            <option value="other">Muu</option>
-        </select>
-        <br><br>
-        <textarea class="textinfo" name="textinfo" rows="5" cols="50" placeholder="Kerro lisätietoa"></textarea><br><br>
-        <button type="submit" class="submit-btn" onclick="submit()">Lähetä</button>
+        <form>
+            <div class="form-group">
+                <label class="namelabel" for="entername">Nimi:</label>
+                <input type="text" class="form-control" id="entername" name="entername" required>
+            </div>
+
+            <div class="form-group">
+                <label class="emaillabel" for="enteremail">Sähköposti:</label>
+                <input type="email" class="form-control" id="enteremail" name="enteremail" pattern="^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$" required>
+            </div>
+
+            <div class="form-group">
+                <label for="options">Valitse Aihe:</label>
+                <select class="form-control" name="options" id="options">
+                    <option value="service">Haluan tilata palveluitanne</option>
+                    <option value="complain">Haluan tehdä valituksen</option>
+                    <option value="other">Muu</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" name="textinfo" rows="5" placeholder="Kerro lisätietoa"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Lähetä</button>
+        </form>
     </div>
 
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navbuttons");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
-
-        function submit() {
-          alert("Lomake lähetetty onnistuneesti!");
-        }
-      </script>
-
-
-<footer class="footer bg-dark text-white pt-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 style="color: white;">Tietoa meistä</h5>
-          <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys. </p>
+    <footer class="footer bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 style="color: white;">Tietoa meistä</h5>
+                    <p style="color: white;">Olemme tapetointiin ja maalaukseen keskittynyt yritys.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: white;">Linkit</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Etusivu</a></li>
+                        <li><a href="palvelut.html" class="text-white">Palvelut</a></li>
+                        <li><a href="varientestaus.html" class="text-white">Värien testaus</a></li>
+                        <li><a href="galleria.html" class="text-white">Galleria</a></li>
+                        <li><a href="yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: white;">Yhteystiedot</h5>
+                    <ul class="list-unstyled">
+                        <li class="text-white">Sähköposti: info@kotkantienmaalaus.fi</li>
+                        <li class="text-white">Puhelin: 044 999 888 99</li>
+                        <li class="text-white">Osoite: Kotkantie 3, 90100 Oulu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logos">
+                <p><a href="https://www.youtube.com/">
+                    <img src="youtubelogo.png" alt="YouTube" class="youtubelogo">
+                </a></p>
+                <p><a href="https://www.instagram.com/">
+                    <img src="insta-logo.png" alt="Instagram" class="instagramlogo">
+                </a></p>
+                <p><a href="https://x.com/home?lang=fi">
+                    <img src="xlogo.webp" alt="X" class="xlogo">
+                </a></p>
+                <p><a href="https://www.facebook.com/">
+                    <img src="facebooklogo.png" alt="Facebook" class="facebooklogo">
+                </a></p>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Kotkantienmaalaus ja tapetointi. Kaikki oikeudet pidätetään.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h5 style="color: white;">Linkit</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white">Etusivu</a></li>
-            <li><a href="palvelut.html" class="text-white">Palvelut</a></li>
-            <li><a href="varientestaus.html" class="text-white">Värien testaus</a></li>
-            <li><a href="galleria.html" class="text-white">Galleria</a></li>
-            <li><a href="yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5 style="color: white;">Yhteystiedot</h5>
-          <ul class="list-unstyled">
-            <p class="text-white">Sähköposti: info@kotkantienmaalaus.fi</p>
-            <p class="text-white">Puhelin: 044 999 888 99</p>
-            <p class="text-white">Osoite: Kotkantie 3, 90100 Oulu</p>
-          </ul>
-        </div>
-      </div>
-      <div class="logos">
-        <p><a href="https://www.youtube.com/">
-          <img src="youtubelogo.png" alt="YouTube" class="youtubelogo">
-        </a></p>
-        <p><a href="https://www.instagram.com/">
-          <img src="insta-logo.png" alt="Instagram" class="instagramlogo">
-        </a></p>
-        <p><a href="https://x.com/home?lang=fi">
-          <img src="xlogo.webp" alt="X" class="xlogo">
-        </a></p>
-        <p><a href="https://www.facebook.com/">
-          <img src="facebooklogo.png" alt="Facebook" class="facebooklogo">
-        </a></p>
-        
-      </div>
-      <div class="row mt-3">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2024 Kotkantienmaalaus ja tapetointi. Kaikki oikeudet pidätetään.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Popper.js (Bootstrapin vaatimuksena) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
