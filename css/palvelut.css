@@ -56,4 +56,9 @@ h5 {
         top: 1100px;
         width: 100%;
     }
+    .services{
+        position: absolute;
+        left: 380px;
+    }
+    
 }

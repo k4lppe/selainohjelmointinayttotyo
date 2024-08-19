@@ -137,7 +137,7 @@ body {
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 
+  
 
 }
 
@@ -153,6 +153,7 @@ body {
 
   .footer .logos img {
       width: 25px;
+    
   }
   .modal-content {
     max-width: 80%;
@@ -182,14 +183,15 @@ body {
   .modal-content {
     max-width: 90%;
     max-height: 60%;
-}
+  }
 
-.close {
+  .close {
     font-size: 2em;
     top: 5px;
     right: 5px;
-}
+  }
 
 }
 
 
+}
