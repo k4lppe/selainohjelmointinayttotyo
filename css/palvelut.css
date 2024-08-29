@@ -5,6 +5,11 @@
     width: 90%; /* Optional: Adjust the width for better responsiveness */
 }
 
+.text-center {
+    font-size: 40px;
+}
+
+
 .service-title {
     text-align: center; /* Center align the title */
     margin-bottom: 20px; /* Add margin for spacing */
